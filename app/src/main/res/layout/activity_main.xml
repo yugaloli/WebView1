@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brillicaservices.webview.MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_weight="0.1"
+            android:id="@+id/progress_bar"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:id="@+id/image_view"
+            android:src="@drawable/ic_launcher_background"/>
+    </LinearLayout>
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webview">
+    </WebView>
+
+</LinearLayout>
